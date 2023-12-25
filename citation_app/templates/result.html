@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reference Citation Result</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Open Sans', sans-serif;
+            color: #495057;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: auto;
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #007bff;
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .result-container {
+            background-color: #e9ecef;
+            border-radius: 5px;
+            padding: 20px;
+            border: 1px solid #dee2e6;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            font-weight: 600;
+            padding: 10px 30px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Reference Citation Result</h2>
+        <div class="result-container">
+            <p>{{ result }}</p>
+        </div>
+        <div class="text-center">
+            <a href="/" class="btn btn-primary">Generate New Citation</a>
+        </div>
+    </div>
+</body>
+</html>
