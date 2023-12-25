@@ -73,6 +73,9 @@ def generate_citation(prompt):
 def main(text):
     openai.api_key = os.getenv('OPENAI_API_KEY')  # Replace with your OpenAI API key
 
+    # Initialize full_citation
+    full_citation = None
+
     hijri_date = find_hijri_date(text)
     if hijri_date:
         gregorian_date = hijri_to_gregorian(*hijri_date)
@@ -80,16 +83,20 @@ def main(text):
         citation = generate_citation(prompt)
         if citation:
             full_citation = integrate_gregorian_date(citation, gregorian_date)
-            return full_citation
+
     else:
         prompt = create_citation_request(text)
         citation = generate_citation(prompt)
-        return citation
+        if citation:
+            full_citation = citation
 
     if full_citation:
         print(full_citation)
+        return full_citation
     else:
         print("No citation generated.")
+        return None
+
 
 # if __name__ == "__main__":
 #     main()
