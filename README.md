@@ -3,7 +3,9 @@
 ## Overview
 The Arabic Reference Citation App is a Django-based web application designed to automatically generate Chicago-style citations for Arabic texts. Utilizing the power of OpenAI's GPT-4 model, the app provides precise and academically-formatted citations, including Library of Congress transliteration.
 
-Check out the live application here: [Arabic Reference Citation App](http://3.10.219.115:8000/)
+## Acess the live Application
+
+[Arabic Reference Citation App](http://3.10.219.115:8000/)
 
 ## Features
 - Extracts Hijri dates from the text and converts them to the Gregorian calendar.
