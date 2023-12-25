@@ -43,6 +43,7 @@ def create_citation_request(arabic_text):
     prompt = (f"Please provide an exact Chicago-style citation with Library of Congress transliteration "
               f"for the following Arabic text. The citation should be in the format typically used "
               f"in academic publications, with transliteration of Arabic names and terms. "
+              f"The format should be like this: <Last name>, <first name/s>. <Name of title>, ed. <Name of editor/s>, <number of volts>.vols. <City of print>:<Publisher>, <Year of print>"
               f"Exclude any translations of the text. Also exclude ANY conversions of Hijri calendar, and do not include any mention of this in your response. Just provide the citation in English.\n\nArabic Text: {arabic_text}")
     return prompt
 
