@@ -10,7 +10,7 @@ WORKDIR /usr/src/app
 
 # Install dependencies
 COPY requirement.txt /usr/src/app/
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirement.txt
 
 # Copy the current directory contents into the container at /usr/src/app/
 COPY . /usr/src/app/
