@@ -1,4 +1,4 @@
-# Arabic Reference Citation App
+# Shamela to Chicago Reference Citation App
 
 ## Overview
 The Arabic Reference Citation App is a Django-based web application designed to automatically generate Chicago-style citations for Arabic texts. Utilizing the power of OpenAI's GPT-4 model, the app provides precise and academically-formatted citations, including Library of Congress transliteration.
@@ -6,7 +6,7 @@ The Arabic Reference Citation App is a Django-based web application designed to 
 
 ## Acess the Live Application
 
-[Arabic Reference Citation App](http://3.10.219.115:8000/)
+[Shamela to Chicago Reference Citation App](http://3.10.219.115:8000/)
 
 ## Features
 - Extracts Hijri dates from the text and converts them to the Gregorian calendar.
